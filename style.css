@@ -1,0 +1,71 @@
+/* Colors:
+
+- White: hsl(0, 0%, 100%)
+- Black: hsl(0, 0%, 0%)
+- Dark Gray: hsl(0, 0%, 55%)
+- Very Dark Gray: hsl(0, 0%, 41%)
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 77%;
+    z-index: 10;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: hsl(0, 0%, 100%);
+}
+
+.logo{
+    font-size: 25px;
+}
+
+.nav span{
+    margin: 12px;
+    font-size: 15px;
+}
+
+#hero{
+    background-image: url(./images/desktop/image-hero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+#hero::before{
+    content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+    background-color: rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.headline{
+    color: hsl(0, 0%, 100%);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 4.3rem;
+    border: 2px solid hsl(0, 0%, 100%);
+    width: 58.5%;
+    padding: 30px 30px; 
+    margin-top: 65px;
+    
+}
+
